@@ -19,7 +19,7 @@ We can bypass this step and login normally to `AWS` Management Console.<br>
 </p>
 </details>
 
-- We go to Services > IAM > Users > Add user<br>
+We go to Services > IAM > Users > Add user<br>
 
 <li>User name : user-1</li><br>
 
