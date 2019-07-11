@@ -149,15 +149,18 @@ We choose to deploy 2 instances and we provision the<b> Advanced details </b> se
 
 <details>
 <summary>🔵 See script</summary>
-<p> 
   
-`#!/bin/bash<br>
+<p>
+  
+'''
+#!/bin/bash<br>
 yum update -y<br>
 yum install httpd -y<br>
 service httpd start<br>
 chkconfig httpd on<br>
 yum install amazon-efs-utils -y
-`
+
+'''
 </p>
 </details>
 
