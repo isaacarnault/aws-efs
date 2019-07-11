@@ -107,13 +107,13 @@ Sercices > Storage > EFS<br>
 
 <b>Configure optional settings</b><br>
 
-Optional - We'll enable encryption of data at rest for this tutorial.<br>
+Optional - We enable encryption of data at rest.<br>
 
 <details>
 <summary>🔴 See output</summary>
 <p>  
   
-[![isaac-arnault-AWS-38.png](https://i.postimg.cc/ZYx44pLk/isaac-arnault-AWS-38.png)](https://postimg.cc/kDGkyVZw)X)
+[![isaac-arnault-AWS-38.png](https://i.postimg.cc/ZYx44pLk/isaac-arnault-AWS-38.png)](https://postimg.cc/kDGkyVZw)
 
 </p>
 </details>
