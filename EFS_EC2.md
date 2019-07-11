@@ -340,4 +340,4 @@ You can also use <b>EC2 - EFS - Instance 1</b> and <b>EC2 - EFS - Instance 2</b>
 
 <hr>
 
-That's all for now guys. I hoped you enjoyed this gist. Feel free to fork it and to spread a word about it. Thanks.
+I hoped you enjoyed this gist. Please fork it and feel free to spread a word about it. Thanks.
