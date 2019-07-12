@@ -4,7 +4,7 @@ We can skip Part 1 if we have a User and Group already provisioned via `IAM`.<br
 
 ## Part 1 : create a User and a Group using IAM
 
-- We log into your `AWS` management console using `$ https://console.aws.amazon.com.`<br>
+- We log into our `AWS` management console using `$ https://console.aws.amazon.com.`<br>
 
 I'm using `MFA` to secure my root account access coupled with `Google Authenticator` on my `Android` smartphone.<br>
 
@@ -64,7 +64,7 @@ We go to Services > IAM > Users > Add user<br>
 </p>
 </details>
 
-<b>Download .csv</b> (you gonna use these credentials later on this tutorial)<br>
+<b>Download .csv</b> (you're going to use these credentials later on in this tutorial)<br>
 
 - We write down our Access key ID and Secret access key > close the window<br>
 
@@ -135,9 +135,9 @@ Optional - We enable encryption of data at rest.<br>
 
 Services > EC2<br>
 
-- In "Create Instance" section, click on "Launch Instance"<br>
+- In "Create Instance" section click on "Launch Instance"<br>
 
-We gonna choose 2 instances <br>
+We're going to choose 2 instances <br>
 
 - We welect Amazon Linux 2 AMI (HVM), SSD Volume Type<br>
 
@@ -209,11 +209,11 @@ yum install amazon-efs-utils -y
 
 ## Part 4 : use the Command Line Interface to connect to both EC2 instances
 
-We should remember that we've downloaded an EC2KP.pem file earlier. We will now move that file to a newly created directory.<br>
+We should remember that we've downloaded an EC2KP.pem file earlier. We will now move this file to a newly created directory.<br>
 
 Ctrl + Alt + T to open a new CLI window<br>
 
-`$ cd Desktop > $ mkdir SSH` - This to create an SSH directory to store our Key Pair (credentials).<br>
+`$ cd Desktop > $ mkdir SSH` - Creates an SSH directory to store our Key Pair (credentials).<br>
 
 `$ cd Downloads` > `$ sudo mv /home/zaki/Downloads/EC2KP.pem /home/zaki/Desktop>SSH`<br>
 
@@ -230,7 +230,7 @@ Ctrl + Alt + T to open a new CLI window<br>
 </p>
 </details>
 
-- We will now connect to both EC2 instances using our `CLI` : we open two distinct windows<br>
+- We will now connect to both EC2 instances using our `CLI` : we open two seperate windows<br>
 
 - Use : `$ ssh ec2-user@your-ipv4-public-address -i EC2KP.pem`.<br>
 
@@ -285,13 +285,13 @@ On <b>EC2 - EFS - Instance 1</b> SSH, use :
 
 `$ mount -t efs -o tls fs-ID:/ /var/www/html`<br>
 
-We gonna create a single web page in order to check later on if it appears on the other EC2 instance SSH.<br>
+We're going to create a single web page in order to check later on if it appears on the other EC2 instance SSH.<br>
 
 `$ cd html`
 
 `echo "<html><h1>Hello World</h1></html>" > index.html`<br>
 
-To verify that the web page was correctly created we can perform a simple `$ ls` or we can connect to our EC2 - EFS - Instance 1 `IPv4 Public IP` in our browser.<br>
+To verify that the web page was correctly created, we can perform a simple `$ ls` or we can connect to our EC2 - EFS - Instance 1 `IPv4 Public IP` in our browser.<br>
 
 <details>
 <summary>🔴 See output</summary>
@@ -302,7 +302,7 @@ To verify that the web page was correctly created we can perform a simple `$ ls`
 </p>
 </details>
 
-To ckeck if <b>EC2 - EFS - Instance 2</b> is sharing the same `EFS` as <b>EC2 - EFS - Instance 1</b>, we perform the following commands on our <b>EC2 - EFS - Instance 2</b> SSH:
+To check if <b>EC2 - EFS - Instance 2</b> is sharing the same `EFS` as <b>EC2 - EFS - Instance 1</b>, we perform the following commands in our <b>EC2 - EFS - Instance 2</b> SSH:
 
 `$ ssh ec2-user@your-ipv4-address -i EC2KP.pem`<br>
 
@@ -340,4 +340,4 @@ You can also use <b>EC2 - EFS - Instance 1</b> and <b>EC2 - EFS - Instance 2</b>
 
 <hr>
 
-I hoped you enjoyed this gist. Please fork it and feel free to spread a word about it. Thanks.
+I hoped you enjoyed this gist. Please fork it and feel free to spread the word about it. Thanks.
