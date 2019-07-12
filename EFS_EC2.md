@@ -1,6 +1,6 @@
 With this tutorial we'll try to make two `EC2` instances share the same `EFS` to launch a simple web server.<br>
 
-We can skip Part 1 if you have a User and Group already provisioned via `IAM`.<br>
+We can skip Part 1 if we have a User and Group already provisioned via `IAM`.<br>
 
 ## Part 1 : create a User and a Group using IAM
 
