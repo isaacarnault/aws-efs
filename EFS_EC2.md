@@ -131,7 +131,7 @@ Optional - We enable encryption of data at rest.<br>
 
 <hr>
 
-## Part 3 : deploy 2 EC2 instances using a custom boot strap script<br>
+## Part 3 : deploy 2 EC2 instances using a custom script<br>
 
 Services > EC2<br>
 
