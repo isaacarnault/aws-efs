@@ -327,7 +327,7 @@ If the file appears, it means that both EC2 instances share the same `EFS`. To m
 </p>
 </details>
 
-You can also use <b>EC2 - EFS - Instance 1</b> and <b>EC2 - EFS - Instance 2</b> `IPv4 Public IP` in our web browser. Both queries should append a unique index.html file and retrieve the same web page.
+You can also use <b>EC2 - EFS - Instance 1</b> and <b>EC2 - EFS - Instance 2</b> `IPv4 Public IP` in your web browser. Both queries should append a unique index.html file and retrieve the same web page.
 
 <details>
 <summary>🔴 See output</summary>
